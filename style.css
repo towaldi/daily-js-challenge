@@ -1,0 +1,231 @@
+/* ==========================================================================
+   reset all
+   ========================================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* other */
+    background-color: #d7d7d7;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+/* ==========================================================================
+   elements
+   ========================================================================== */
+
+.header {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    width: 12rem;
+    /* other */
+    background-color: #fff;
+    border-right: 2px solid #000;
+    transition: all 0.1s ease-in-out;
+    transform: translate(-100%);
+}
+
+.header-text-icon {
+    /* display & box model */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* other */
+}
+
+.tab-list {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    overflow: hidden;
+    /* other */
+    list-style-type: none;
+}
+
+
+.tab {
+    /* display & box model */
+    padding: 0.5rem 1rem;
+    width: 100%;
+    /* other */
+    background-color: transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    list-style-type: none;
+    text-decoration: none;
+    transition: all 0.1s ease-in-out;
+}
+
+.tab:hover {
+    /* other */
+    background-color: #efefef;
+}
+
+main {
+    /* display & box model */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+}
+
+.icon-btn {
+    /* display & box model */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    margin: 1rem;
+    /* Other */
+    background-color: transparent;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+.icon-btn:hover {
+    /* other */
+    background-color: #efefef;
+}
+
+
+/* ==========================================================================
+   layout + effects
+   ========================================================================== */
+
+.row-1rem {
+    /* display & box model */
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    /* other */
+}
+
+.d-none {
+    /* display & box model */
+    display: none;
+}
+
+.selected {
+    /* other */
+    background-color: #b7b7b7;
+}
+
+.show-sidebar {
+    /* other */
+    transform: translate(0);
+}
+
+
+/* ==========================================================================
+   responsiveness
+   ========================================================================== */
+@media screen and (min-width: 748px) {
+
+    /* Important lines -> for displaying tabs */
+    /*.tab-list {
+        height: auto;
+        display: flex;
+        justify-content: flex-end;
+    } */
+}
+
+
+/* ==========================================================================
+   font
+   ========================================================================== */
+
+h1 {
+    font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #000;
+}
+
+h2, li {
+    font-family: 'Roboto Mono', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+}
+
+h2, li {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #000;
+}
+
+h2 {
+    padding: 1rem;
+}
+
+a, 
+a:hover,
+a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* font implementation - 'roboto'
+   ========================================================================== */
+
+/* bold */
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assets/Roboto/Roboto-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+/* regluar */
+@font-face {
+    font-family: 'Roboto';
+    src: url(./assets/Roboto/Roboto-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+/* font implementation - 'roboto mono'
+   ========================================================================== */
+
+/* bold */
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(./assets/Roboto_Mono/static/RobotoMono-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+/* regluar */
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url(./assets/Roboto_Mono/static/RobotoMono-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 400;
+}
